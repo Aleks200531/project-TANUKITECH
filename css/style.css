@@ -103,9 +103,7 @@
     border-radius: 16px;
     background: linear-gradient(90deg, #0137FF 0%, #02A9FF 100%);
     border: none;
-}
 
-.btn a {
     color: #fff;
     font-family: "Roboto Flex";
     font-size: 24px;
@@ -115,6 +113,8 @@
     border: none;
     cursor: pointer;
 }
+
+
 
 .btn:hover {
     opacity: 0.7;
