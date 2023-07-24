@@ -1,1 +1,57 @@
-@import url('./normalize.css');
+@import url('normalize.css');
+
+.header {
+    margin-top: 42px;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__logo {
+    background: linear-gradient(270deg, #009FFA 0%, #0137FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 200px;
+}
+
+.header__span {
+    background: linear-gradient(270deg, #009FFA 0%, #0137FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Red Hat Text;
+}
+
+
+.menu__items {
+    display: flex;
+    justify-content: space-between;
+    gap: 38px;
+}
+
+.menu__link {
+    color: #0040FE;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
