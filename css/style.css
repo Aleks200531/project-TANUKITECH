@@ -51,6 +51,16 @@
     line-height: normal;
 }
 
+.menu__link:hover {
+    color:red;
+}
+
+.menu__item:hover {
+    transform: scale(1.2);
+}
+
+
+
 
 
 
