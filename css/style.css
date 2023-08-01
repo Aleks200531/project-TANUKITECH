@@ -340,6 +340,27 @@
     line-height: 32px;
 }
 
+.team {
+    margin-top: 48px;
+    margin-bottom: 56px;
+}
+
+.image-group {
+    display: flex;
+    max-width: 1440px;
+    align-items:flex-start;
+    gap: -70px;
+}
+
+.image-team {
+    width: 320px;
+    border-radius: 20px;
+    flex-shrink: 0;
+    margin-right: -55px;
+}
+
+
+
 
 
 
