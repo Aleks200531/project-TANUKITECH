@@ -1,6 +1,7 @@
 @import url('normalize.css');
 @import url('fonts.css');
 
+
 .header {
     padding-top: 42px;
 }
@@ -76,12 +77,15 @@
     max-width: 800px;
 }
 
-.information__title {
+.information__title, .product-title, .achievements__title, .about__title, .architecture-title, .trust-us__title, .vacancies__title {
     color: #000;
     font-family: 'Roboto Flex';
-    font-size: 72px;
     font-style: normal;
     font-weight: 800;
+}
+
+.information__title {
+    font-size: 72px;
     line-height: 76px;
     letter-spacing: -2.16px;
     margin-bottom: 32px;
@@ -153,8 +157,6 @@
     line-height: normal;
     height: 84px;
     letter-spacing: 1.32px;
-    margin-bottom: 0px;
-    margin-top: 0px;
 }
 
 .task__description {
@@ -183,10 +185,7 @@
 }
 
 .product-title {
-    color: #000;
     font-size: 72px;
-    font-style: normal;
-    font-weight: 800;
     line-height: none;
     letter-spacing: -2.16px;
     margin-top: 120px;
@@ -257,14 +256,9 @@
 }
 
 .architecture-title {
-  color: #000;
   text-align: center;
   font-size: 44px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
   letter-spacing: 1.32px;
-  margin: 0;
 }
 
 .architecture-text {
@@ -292,11 +286,7 @@
 }
 
 .about__title {
-   color:#000;
    font-size: 72px;
-   font-style: normal;
-   font-weight: 800;
-   line-height: normal;
    letter-spacing: 2.16px;
    margin-bottom: 32px;
 }
@@ -377,11 +367,8 @@
 .achievements__title {
    color:rgba(255, 255, 255, 0.70);
    font-size: 72px;
-   font-style: normal;
-   font-weight: 800;
    line-height: normal;
    letter-spacing: 2.16px;
-   margin: 0;
 }
 
 .achievements-list {
@@ -417,6 +404,113 @@
 .achievements__span {
     white-space: nowrap;
 }
+
+.trust-us {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.trust-us__inner {
+    display: inline-flex;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 32px;
+}
+
+.trust-us__title {
+    font-size: 72px;
+    line-height: normal;
+    letter-spacing: 2.16px;
+}
+
+.image-list {
+    display: flex;
+    gap: 40px;
+    align-items:flex-start;
+}
+
+
+.image__item-1 {
+    background-image: url('../image/image-company-1.png');
+    width: 260px;
+    height: 170px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.image__item-2 {
+    background-image: url('../image/image-company-2.png');
+    width: 260px;
+    height: 170px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.image__item-3 {
+    background-image: url('../image/image-company-3.png');
+    width: 260px;
+    height: 170px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.image__item-4 {
+    background-image: url('../image/image-company-4.png');
+    width: 260px;
+    height: 170px;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+img.image__item-2:hover {
+    background-image: url('../image/image-hover-1.png');
+    transition: all .5s;
+}
+
+img.image__item-3:hover {
+    background-image: url('../image/image-hover-2.png');
+    transition: all .5s;
+}
+
+img.image__item-4:hover {
+    background-image: url('../image/image-hover-3.png');
+    transition: all .5s;
+}
+
+.vacancies {
+    margin-top: 120px;
+    margin-bottom: 120px;
+
+}
+
+.vacancies-inner {
+    display: flex;
+    width: 1158px;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.vacancies__title {
+    font-size: 72px;
+}
+
+.vacancies__text {
+    color: #8F8F8F;
+    font-family: 'Roboto Flex';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.vacancies__link {
+    color:#0260FF;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+
+
 
 
 
