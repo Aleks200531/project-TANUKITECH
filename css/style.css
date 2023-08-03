@@ -1,6 +1,15 @@
 @import url('normalize.css');
 @import url('fonts.css');
 
+:root {
+    --font-family: 'Roboto Flex';
+    --color-title: #000;
+    --color-text: #8F8F8F;
+    --color-link:#0040FE;
+    --background-gradient: linear-gradient(270deg, #009FFA 0%, #0137FF 100%);
+    --background-btn: linear-gradient(90deg, #0137FF 0%, #02A9FF 100%);
+}
+
 
 .header {
     padding-top: 42px;
@@ -19,7 +28,7 @@
 }
 
 .header__logo {
-    background: linear-gradient(270deg, #009FFA 0%, #0137FF 100%);
+    background: var(--background-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -30,7 +39,7 @@
 }
 
 .header__span {
-    background: linear-gradient(270deg, #009FFA 0%, #0137FF 100%);
+    background: var(--background-gradient);
     background-clip: text;
     font-weight: 700;
     -webkit-background-clip: text;
@@ -45,9 +54,9 @@
 }
 
 .menu__link {
-    color: #0040FE;
+    color: var(--color-link);
     font-size: 17.9px;
-    font-family: 'Roboto Flex';
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -77,9 +86,9 @@
     max-width: 800px;
 }
 
-.information__title, .product-title, .achievements__title, .about__title, .architecture-title, .trust-us__title, .vacancies__title {
-    color: #000;
-    font-family: 'Roboto Flex';
+.information__title, .product-title, .achievements__title, .about__title, .architecture-title, .trust-us__title, .vacancies__title, .contacts__title {
+    color: var(--color-title);
+    font-family: var(--font-family);
     font-style: normal;
     font-weight: 800;
 }
@@ -105,11 +114,11 @@
     padding: 24px 45px;
     text-align: center;
     border-radius: 16px;
-    background: linear-gradient(90deg, #0137FF 0%, #02A9FF 100%);
+    background: var(--background-btn);
     border: none;
 
     color: #fff;
-    font-family: "Roboto Flex";
+    font-family: var(--font-family);
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -149,8 +158,8 @@
 }
 
 .task__title {
-    color: #000;
-    font-family: "Roboto Flex";
+    color: var(--color-title);
+    font-family: var(--font-family);
     font-size: 44px;
     font-style: normal;
     font-weight: 800;
@@ -160,8 +169,8 @@
 }
 
 .task__description {
-    color: #8F8F8F;
-    font-family: "Roboto Flex";
+    color: var(--color-text);
+    font-family: var(--font-family);
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
@@ -170,8 +179,8 @@
 }
 
 .title {
-    color: #000;
-    font-family: "Roboto Flex";
+    color: var(--color-title);
+    font-family: var(--font-family);
     font-size: 44px;
     font-style: normal;
     font-weight: 800;
@@ -181,7 +190,7 @@
 
 .product {
     padding-bottom: 56px;
-    font-family: 'Roboto Flex';
+    font-family: var(--font-family);
 }
 
 .product-title {
@@ -205,7 +214,7 @@
 
 .product__description {
   flex: 1 0 0;
-  color: #8F8F8F;
+  color: var(--color-text);
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -229,7 +238,7 @@
 
 .product-text {
     flex: 1 0 0;
-    color: #000;
+    color: var(--color-title);
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
@@ -239,7 +248,7 @@
 .architecture {
     margin-top: 56px;
     margin-bottom: 120px;
-    font-family: 'Roboto Flex';
+    font-family: var(--font-family);
 }
 
 .architecture__inner {
@@ -262,7 +271,7 @@
 }
 
 .architecture-text {
-    color: #8F8F8F;
+    color: var(--color-text);
     text-align: center;
     width: 1160px;
     font-size: 24px;
@@ -280,7 +289,7 @@
 }
 
 .about-us {
-    font-family: 'Roboto Flex';
+    font-family: var(--font-family);
     margin-top: 120px;
     margin-bottom: 48px;
 }
@@ -300,7 +309,7 @@
 
 .about__text {
    width: 560px;
-   color: #000;
+   color: var(--color-title);
    font-size: 24px;
    font-style: normal;
    font-weight: 800;
@@ -323,7 +332,7 @@
 
 .description__text {
     width: 560px;
-    color:#8F8F8F;
+    color:var(--color-text);
     font-size: 24px;
     font-style: normal;
     font-weight: 500;
@@ -350,10 +359,10 @@
 }
 
 .our-achievements {
-    background: linear-gradient(90deg, #0137FF 0%, #02A9FF 100%);
+    background: var(--background-gradient);
     padding: 64px 85px 80px 85px;
 
-    font-family: 'Roboto Flex';
+    font-family: var(--font-family);
 }
 
 .achievements__inner {
@@ -495,8 +504,8 @@ img.image__item-4:hover {
 }
 
 .vacancies__text {
-    color: #8F8F8F;
-    font-family: 'Roboto Flex';
+    color: var(--color-text);
+    font-family: var(--font-family);
     font-size: 28px;
     font-style: normal;
     font-weight: 500;
@@ -504,9 +513,54 @@ img.image__item-4:hover {
 }
 
 .vacancies__link {
-    color:#0260FF;
+    color:var(--color-link);
     text-decoration-line: underline;
     cursor: pointer;
+}
+
+.contacts {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.contacts-inner {
+    display: flex;
+    width: 1160px;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contacts__title {
+    font-size: 72px;
+}
+
+.contacts-address {
+    color:var(--color-text);
+    font-family: var(--font-family);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-contacts {
+    padding: 24px 32px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.footer {
+    margin-bottom: 60px;
+}
+
+.footer-text {
+  width: 1159px;
+  color: var(--color-text);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 
